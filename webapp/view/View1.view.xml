@@ -1,0 +1,22 @@
+<mvc:View id="reuseCompView"
+    controllerName="reuse.reusablecomp.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form">
+        <VBox id="vboxReuseComp">
+            <f:SimpleForm id="sfCustomerData"
+                editable="false"
+                layout="ResponsiveLayout"
+                title="Customer (Reuse Component)" >
+                <f:content>
+                    <Label id="lblLocationID" text="Location ID"/>
+                    <Text id="txtCustomerID" text="{LOCATION_ID}" />
+                    <Label id="lblLocDesc" text="Location Description" />
+                    <Text id="txtlocDesc" text="{LOCATION_DESC}" />
+                    <Label id="lblLocType" text="Location Type" />
+                    <Text id="txtlocType" text="{LOCATION_TYPE}" />
+                    
+                </f:content>
+            </f:SimpleForm>
+        </VBox>
+</mvc:View>
